@@ -1,0 +1,47 @@
+Dạng A
+1.
+Lệnh gắn cho isA một giá trị true khi grade nằm trong khoảng từ 90 đến 100 và ngược lại, gắn cho isA giá trị false khi grade không nằm trong phạm vi này.
+Sửa: bool isA = (90 <= grade && grade <= 100)
+2.
+0.6
+3.
+Giá trị của x mang kiểu int, tích x*x cũng được tính là một giá trị kiểu int trước khi đổi ra long. Tuy nhiên 65536*65536 = 2^32 là giá trị vượt ra ngoài khả năng lưu trữ của số int 32 bit trước khi đổi ra long nên đoạn code không in ra kết quả 2^32.
+4.
+0 (false)
+5. 
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+	int main ()
+{
+	int x;
+	double y;
+	cout << x/0 << x%0 << y/0 << y%0;
+	return 0;
+}
+=> CT báo lỗi cú pháp
+6.
+int a = 27 * "three"; => Báo lỗi Invalid operands of types 'int' and 'const char' to binary 'operator*'
+
+double x;
+	cout << x;
+=> báo lỗi chưa khai báo x nếu chuyển khai báo x ra sau int main()
+=> không báo lỗi khi khai báo x trước int main () vì khi đó x coi như biến toàn cục
+7.
+0
+0.75
+0.75
+0.75
+8.
+CT báo lỗi conflicting declaration
+(khai báo biến xung đột)
+9.
+Bên trong khối lệnh con, định danh arg1 chỉ biến arg1 có giá trị A
+10.
+Định danh arg1 chỉ biến arg1 có giá trị -1
+11.
+Sai khi chưa ép kiểu giá trị 5/9 thành double vì máy mặc định giá trị 5/9 là kiểu int và kết quả sẽ là 0
+12.
+Here
