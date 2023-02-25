@@ -1,24 +1,9 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
-
 int main ()
 {
 
-   //Bai 2
-    bool kt = true;
-    string A;
-    getline(cin, A);
-    int len = A.length();
-    for (int i=0; i<= len/2; i++) {
-      if (A[i] != A[len-i-1])
-        kt = false ; break;
-    }
-    if (kt) cout << "Yes" ;
-    else cout << "No";
-
-    //bai 4
+   //bai 4_ Do min
     int m, n;
     cin >> m >> n;
     char Map[m][n];
@@ -47,6 +32,5 @@ int main ()
         }
         cout << endl;
     }
-
     return 0;
 }
